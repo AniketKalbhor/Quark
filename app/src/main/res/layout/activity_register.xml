@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:theme="@style/Base.Theme.Task1"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <EditText
+        android:id="@+id/name"
+        android:drawableStart="@drawable/name"
+        android:layout_height="54dp"
+        android:background="@drawable/input"
+        style="@style/inputIcon"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257"
+        android:autofillHints="name" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:background="@drawable/input"
+        android:layout_height="54dp"
+        android:ems="10"
+        style="@style/inputIcon"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:maxLength="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableStart="@drawable/baseline_phone_24"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.599"
+        android:autofillHints="phone" />
+
+    <EditText
+        android:id="@+id/email"
+        android:background="@drawable/input"
+        android:layout_height="54dp"
+        style="@style/inputIcon"
+        android:drawableStart="@drawable/baseline_mail_outline_24"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376"
+        android:autofillHints="emailAddress" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        style="@style/inputIcon"
+        android:drawableStart="@drawable/baseline_password_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/input"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481"
+        android:autofillHints="password" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:width="350dp"
+        android:textSize="30sp"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        android:layout_height="wrap_content"
+        android:text="@string/register_now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

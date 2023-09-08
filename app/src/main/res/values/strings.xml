@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Task 1</string>
+    <string name="welcome">Welcome,</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="register_now">Register Now</string>
+    <string name="login_now">Login Now</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="logout">LOGOUT</string>
+</resources>
