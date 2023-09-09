@@ -7,81 +7,99 @@
     android:layout_height="match_parent"
     tools:context=".register">
 
-    <EditText
-        android:id="@+id/name"
-        android:drawableStart="@drawable/name"
-        android:layout_height="54dp"
-        android:background="@drawable/input"
-        style="@style/inputIcon"
-        android:ems="10"
-        android:hint="@string/name"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/register"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
+        app:cardBackgroundColor="@color/md_theme_light_primaryContainer"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257"
-        android:autofillHints="name" />
+        app:layout_constraintVertical_bias="0.497"
+        app:cardCornerRadius="30dp">
 
-    <EditText
-        android:id="@+id/phone"
-        android:background="@drawable/input"
-        android:layout_height="54dp"
-        android:ems="10"
-        style="@style/inputIcon"
-        android:hint="@string/phone_number"
-        android:inputType="phone"
-        android:maxLength="10"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:drawableStart="@drawable/baseline_phone_24"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599"
-        android:autofillHints="phone" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="412dp">
 
-    <EditText
-        android:id="@+id/email"
-        android:background="@drawable/input"
-        android:layout_height="54dp"
-        style="@style/inputIcon"
-        android:drawableStart="@drawable/baseline_mail_outline_24"
-        android:ems="10"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376"
-        android:autofillHints="emailAddress" />
+            <EditText
+                android:id="@+id/name"
+                style="@style/inputIcon"
+                android:layout_height="54dp"
+                android:autofillHints="name"
+                android:background="@drawable/input"
+                android:drawableStart="@drawable/name"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.186" />
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_height="54dp"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        style="@style/inputIcon"
-        android:drawableStart="@drawable/baseline_password_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/input"
-        app:layout_constraintHorizontal_bias="0.477"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481"
-        android:autofillHints="password" />
+            <EditText
+                android:id="@+id/phone"
+                style="@style/inputIcon"
+                android:layout_height="54dp"
+                android:autofillHints="phone"
+                android:background="@drawable/input"
+                android:drawableStart="@drawable/baseline_phone_24"
+                android:ems="10"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:maxLength="10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.859" />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/inputIcon"
+                android:layout_height="54dp"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/input"
+                android:drawableStart="@drawable/baseline_mail_outline_24"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.409" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/inputIcon"
+                android:layout_height="54dp"
+                android:autofillHints="password"
+                android:background="@drawable/input"
+                android:drawableStart="@drawable/baseline_password_24"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.634" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:width="350dp"
         android:textSize="30sp"
-        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        style="@style/Widget.Material3.Button.TonalButton"
         android:layout_height="wrap_content"
         android:text="@string/register_now"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,5 +108,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.837" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

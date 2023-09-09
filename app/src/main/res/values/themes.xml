@@ -33,8 +33,9 @@
     <style name="inputIcon">
         <item name="android:drawablePadding">20dp</item>
         <item name="android:drawableLeft">20dp</item>
-        <item name="android:textColor">@color/md_theme_light_onTertiary</item>
-        <item name="android:drawableTint">@color/md_theme_light_outlineVariant</item>
+        <item name="android:textColor">@color/md_theme_light_onPrimaryContainer</item>
+        <item name="android:textColorHint">@color/md_theme_light_onPrimaryContainer</item>
+        <item name="android:drawableTint">@color/md_theme_light_onPrimaryContainer</item>
         <item name="android:layout_width">40mm</item>
         <item name="android:paddingLeft">15dp</item>
     </style>
