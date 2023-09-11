@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".welcome"
     android:background="#ff4dff"
-    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+    >
 
     <ImageView
         android:id="@+id/imageView2"

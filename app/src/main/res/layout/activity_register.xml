@@ -3,19 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:theme="@style/Base.Theme.Task1"
     android:layout_height="match_parent"
     tools:context=".register">
 
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
-        style="@style/Widget.Material3.CardView.Elevated"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:cardBackgroundColor="@color/md_theme_light_primaryContainer"
         app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.Material3.CardView.Filled"
         app:layout_constraintVertical_bias="0.497"
         app:cardCornerRadius="30dp">
 
@@ -97,9 +95,9 @@
     <Button
         android:id="@+id/register"
         android:layout_width="wrap_content"
-        android:width="350dp"
+        android:width="320dp"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
         android:textSize="30sp"
-        style="@style/Widget.Material3.Button.TonalButton"
         android:layout_height="wrap_content"
         android:text="@string/register_now"
         app:layout_constraintBottom_toBottomOf="parent"
